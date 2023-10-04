@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="right-section">
+        <label for="priceFilter">Select Price Range:</label>
+        <select id="priceFilter">
+            <option value="All">All</option>
+            <option value="10">0-10</option>
+            <option value="20">0-20</option>
+            <option value="30">0-30</option>
+            <option value="100">0-100</option>
+            <option value="200">0-200</option>
+            <option value="300">0-300</option>
+            <option value="400">0-400</option>
+            <option value="500">0-500</option>
+        </select>
+    </div>
+    <select    id="sort-select">
+        <option value="asc">Artan Sıralama</option>
+        <option value="desc">Azalan Sıralama</option>
+    </select>
+    <button id="sort-button">Sırala</button>
+
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Unit Price</th>
+                <th>Stock</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+
+    <button id="fetch-button">Verileri Getir</button>
+
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
